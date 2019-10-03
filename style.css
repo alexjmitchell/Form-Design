@@ -1,9 +1,8 @@
 html {
   box-sizing: border-box;
   font-size: 1em;
-  font-family: times, "Times New Roman";
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  height: 100%;
 }
 
 *,
@@ -11,17 +10,19 @@ html {
 *::after {
   box-sizing: inherit;
   background: #5ba2d5;
-  color: white;
+  color: #f0ebeb;
 }
 
 body {
+  margin-right: 250px;
+  margin-left: 250px;
   display: flex;
   background: #5ba2d5;
   justify-content: center;
 }
 
 input {
-  border: 1px white solid;
+  border: 1px #f0ebeb solid;
 }
 
 input:hover,
@@ -31,32 +32,48 @@ textarea:hover {
 }
 
 .forms {
+  width: 100%;
   margin-top: 100px;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .form-style {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 select {
   width: 50%;
-  border: 1px white solid;
+  border: 1px #f0ebeb solid;
   color: #406582;
   font-style: italic;
 }
 
 textarea {
-  width: 80%;
+  /* width: 80%; */
   height: 100px;
-  border: 1px white solid;
+  border: 1px #f0ebeb solid;
 }
 
 ::placeholder {
   font-style: italic;
   color: #406582;
+}
+
+label {
+  padding-bottom: 3px;
+  font-size: 0.7em;
+}
+
+input,
+label,
+textarea,
+select {
+  width: 200px;
 }
