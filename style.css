@@ -85,3 +85,9 @@ select {
   margin-bottom: 5px;
   width: 200px;
 }
+
+input,
+textarea,
+select {
+  padding-left: 10px;
+}
